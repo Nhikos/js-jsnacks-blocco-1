@@ -4,17 +4,17 @@
 // se è dispari (verifichiamolo con una funzione) inseriscilo nell’array.
 // Stampa l'array nella console.
 
-var arrayVuoto = [];
+var emptyArray = [];
 
 
 for (i=0; i<6; i++) {
-    var numeroScelto = parseInt(prompt("Inserisci un numero, Bestia!"));
-    if (isOdd (numeroScelto)) {
+    var chosenNumber = parseInt(prompt("enter a number"));
+    if (isOdd (chosenNumber)) {
         
-        arrayVuoto.push(numeroScelto)
+        emptyArray.push(chosenNumber)
     }
 }
-console.log(arrayVuoto);
+console.log(emptyArray);
 
 
 // FUNZIONE

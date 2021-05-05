@@ -4,19 +4,18 @@ var nameInList = ["Andrea", "Rocco", "Antonio", "Francesca", "Paolo", "Rick"];
 console.log(nameInList);
 var surnameInList = ["Bale", "Rooney", "Walker", "Garrix", "Block", "Smith"];
 
-// -----------------------------------
-// FUNCTION
-
 function list (name,surname) {
+    // pick a random element from each array
     var name = Math.floor(Math.random()* nameInList.length);
     var surname = Math.floor(Math.random()* surnameInList.length);
-    nomeCompletoFunzione = nameInList[name] + " " + surnameInList[surname];
-
-    return nomeCompletoFunzione;
+    // create a complete random name
+    randomPerson = nameInList[name] + " " + surnameInList[surname];
+// function's output
+    return randomPerson;
 }
-
+// making a list
 for (i=0; i<10; i++) {
-    var nomeCompleto = list (nameInList, surnameInList);
-    console.log("invitato", nomeCompleto);
-    document.getElementById("lista").innerHTML+="<li>"+ nomeCompleto +"</li>"
+    var completeName = list (nameInList, surnameInList);
+    console.log("invitato", completeName);
+    document.getElementById("list").innerHTML+="<li>"+ completeName +"</li>";
 }
